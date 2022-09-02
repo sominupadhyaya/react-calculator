@@ -23,7 +23,7 @@ const Calculator = () => {
       <button className="normal-btns" onClick={handleClick(8)}>8</button>
       <button className="normal-btns" onClick={handleClick(9)}>9</button>
       <button className="normal-btns" onClick={handleClick(0)}>0</button>
-      <button className="add-btn"     onClick={(e : Event) => console.log(e)}>+</button>
+      <button className="add-btn"     onClick={(e : Event) => console.log(e``)}>+</button>
     </div>
   )
 }
