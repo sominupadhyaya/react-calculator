@@ -1,9 +1,16 @@
-import React from 'react'
+import React , {useState} from 'react'
 
 const Calculator = () => {
-  const handleClick = (number) => () =>{
-    console.log(number)
+  const [userEnteringNums, setUserEnteringNums] = useState(true)
+  const [numberOne, setNumberOne] = useState<number | null>(null)
+  const [numberTwo, setNumberTwo] = useState<number | null>(null)
+
+  const handleClick = (num1 : number) => () => setNumberOne(num1)
+
+  const handleOperations = (e) => () =>{
+    setUserEnteringNums(false)
   }
+
   return (
     <div>
       <button className="normal-btns" onClick={handleClick(1)}>1</button>
@@ -16,6 +23,7 @@ const Calculator = () => {
       <button className="normal-btns" onClick={handleClick(8)}>8</button>
       <button className="normal-btns" onClick={handleClick(9)}>9</button>
       <button className="normal-btns" onClick={handleClick(0)}>0</button>
+      <button className="add-btn"     onClick={(e : Event) => console.log(e)}>+</button>
     </div>
   )
 }
