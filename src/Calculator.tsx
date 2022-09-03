@@ -1,16 +1,14 @@
 import React , {useReducer} from 'react'
-import {Actions} from './actions'
-interface State {
-  currentOperand : number,
-  previousOperand : number,
-  operation : string
-}
+import { ActionTypes } from './state/action-types'
+import {Actions} from './state/actions'
+import {State} from './state/state'
 
 
 
 const reducer = (state : State, action  : Actions) =>{
   switch(action.type){
-
+    case ActionTypes.ADD_NUMS:
+      
   }
 }
 
