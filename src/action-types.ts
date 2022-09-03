@@ -1,0 +1,15 @@
+export enum ActionTypes {
+  ADD_NUMS =  'ADD-NUMS',
+  OPERATION = 'OPERATION',
+  CLEAR_SCREEN = 'CLEAR-SCREEN',
+  DELETE_NUMS = 'DELETE-NUMS',
+  EVALUATE = 'EVALUATE'
+} 
+
+
+
+
+
+
+
+

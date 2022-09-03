@@ -1,20 +1,17 @@
 import React , {useReducer} from 'react'
-
-type ActionTypes = {
-  ADD_NUMS: string,
-  OPERATION: string,
-  CLEAR_SCREEN : string,
-  DELETE_NUMS : string,
-  EVALUATE : string
-}
+import {Actions} from './actions'
 interface State {
   currentOperand : number,
   previousOperand : number,
   operation : string
 }
 
-const reducer = (state : State, action) =>{
 
+
+const reducer = (state : State, action  : Actions) =>{
+  switch(action.type){
+
+  }
 }
 
 const Calculator = () => {
