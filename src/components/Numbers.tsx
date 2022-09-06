@@ -1,8 +1,7 @@
 import React from 'react'
-import {State}from "../state/state"
 import {ActionTypes} from '../state/action-types.ts'
 
-const Numbers = ({dispatch , digit} ) => {
+const Number = ({dispatch , digit} ) => {
   return (
     <>
     <button onClick = {() => dispatch({
@@ -15,4 +14,4 @@ const Numbers = ({dispatch , digit} ) => {
   )
 }
 
-export default Numbers
+export default Number
