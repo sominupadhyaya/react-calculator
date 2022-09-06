@@ -5,14 +5,16 @@ import {State} from './state/state'
 
 
 
-const reducer = (state : State, action  : Actions) =>{
-  switch(action.type){
-    case ActionTypes.ADD_NUMS:
-      
-  }
-}
-
 const Calculator = () => {
+  function reducer(state : State, action  : Actions){
+    switch(action.type){
+      case ActionTypes.ADD_NUMS:
+        return {
+          ...state ,
+          currentOperand : `${currentOperand} ${action.payload}`
+      }
+    }
+  }
   const [{currentOperand, previousOperand, operation} , dispatch] = useReducer<State>(reducer , {})
   return (
     <div>
