@@ -1,9 +1,9 @@
 import React , {useReducer} from 'react'
 import { ActionTypes } from '../state/action-types'
-import {Actions} from '../state/actions.ts'
-import {State} from '../state/state.ts'
-import Number from "./Number.tsx"
-import Operation from "./Operation.tsx"
+import {Actions} from '../state/actions'
+import {State} from '../state/state'
+import Number from "./Number"
+import Operation from "./Operation"
 
 
 

@@ -1,5 +1,5 @@
 import React from "react"
-import {ActionTypes} from './actions-types.ts'
+import {ActionTypes} from '../state/action-types'
 
 const Operation = ({dispatch, operation}) =>{
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import {ActionTypes} from '../state/action-types.ts'
+import {ActionTypes} from '../state/action-types'
 
 const Number = ({dispatch , digit}) => {
   return (
