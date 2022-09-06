@@ -1,12 +1,14 @@
 import React , {useReducer} from 'react'
 import { ActionTypes } from '../state/action-types'
-import {Actions} from '../state/actions'
-import {State} from '../state/state'
-import {Number} from "./Numbers"
+import {Actions} from '../state/actions.ts'
+import {State} from '../state/state.ts'
+import Number from "./Number.tsx"
+import Operation from "./Operation.tsx"
 
 
 
 const Calculator = () => {
+
   function reducer(state : State, action  : Actions){
     switch(action.type){
       case ActionTypes.ADD_NUMS:
@@ -21,20 +23,20 @@ const Calculator = () => {
     <div>
       <div className="previous-operand">{previousOperand} {operation}</div>
       <div className="current-operand">{currentOperand}</div>
-      <Number className="normal-btns" digit="1" dispatch={dispatch}/>
-      <Number className="normal-btns" digit="2" dispatch={dispatch}/>
-      <Number className="normal-btns" digit="3" dispatch={dispatch}/>
-      <Number className="normal-btns" digit="4" dispatch={dispatch}/>
-      <Number className="normal-btns" digit="5" dispatch={dispatch}/>
-      <Number className="normal-btns" digit="6" dispatch={dispatch}/>
-      <Number className="normal-btns" digit="7" dispatch={dispatch}/>
-      <Number className="normal-btns" digit="8" dispatch={dispatch}/>
-      <Number className="normal-btns" digit="9" dispatch={dispatch}/>
-      <Number className="normal-btns" digit="0" dispatch={dispatch}/>
-      <Operations className="add-btn" operation="+" dispatch={dispatch}/>
-      <Operations className="sub-btn" operation="-" dispatch={dispatch}/>
-      <Operations className="divide-btn" operation="/" dispatch={dispatch}/>
-      <Operations className="multiply-btn" operation="*" dispatch={dispatch}/>
+      <Number  digit="1" dispatch={dispatch}/>
+      <Number  digit="2" dispatch={dispatch}/>
+      <Number  digit="3" dispatch={dispatch}/>
+      <Number  digit="4" dispatch={dispatch}/>
+      <Number  digit="5" dispatch={dispatch}/>
+      <Number  digit="6" dispatch={dispatch}/>
+      <Number  digit="7" dispatch={dispatch}/>
+      <Number  digit="8" dispatch={dispatch}/>
+      <Number  digit="9" dispatch={dispatch}/>
+      <Number  digit="0" dispatch={dispatch}/>
+      <Operation  operation="+" dispatch={dispatch}/>
+      <Operation  operation="-" dispatch={dispatch}/>
+      <Operation  operation="/" dispatch={dispatch}/>
+      <Operation  operation="*" dispatch={dispatch}/>
     </div>
   )
 }

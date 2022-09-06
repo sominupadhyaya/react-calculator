@@ -1,11 +1,11 @@
 import React from 'react'
 import {ActionTypes} from '../state/action-types.ts'
 
-const Number = ({dispatch , digit} ) => {
+const Number = ({dispatch , digit}) => {
   return (
     <>
     <button onClick = {() => dispatch({
-        type : ActionTypes.AddAction,
+        type : ActionTypes.ADD_NUMS,
         payload : {
             digit
         }
