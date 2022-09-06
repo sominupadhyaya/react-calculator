@@ -1,7 +1,8 @@
 import React , {useReducer} from 'react'
-import { ActionTypes } from './state/action-types'
-import {Actions} from './state/actions'
-import {State} from './state/state'
+import { ActionTypes } from '../state/action-types'
+import {Actions} from '../state/actions'
+import {State} from '../state/state'
+import {Numbers} from "./Numbers"
 
 
 
